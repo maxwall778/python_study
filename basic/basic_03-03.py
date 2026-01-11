@@ -1,4 +1,4 @@
-# 리스트
+# 리스트 a = [] 형태
 # 자료구조에서 중요
 # 리스트 자료형(순서o, 중복o, 수정o, 삭제o)
 
@@ -109,19 +109,28 @@ a = [5, 2 ,3, 1 ,4]
 
 print('a -', a)
 
+print()
 # 1. append : 리스트 맨뒤에 추가 리스트값 을 추가한다!
 a.append(10)
 print('a -', a)
+
+print()
 # 2. sort : 오름차순으로 정리 
 a.sort()
 print('a -', a)
+
+print()
 # 3. reverse() : 내림차순으로 정리
 a.reverse()
 print('a - ', a)
+
+print()
 # 4. index 를 갖고오는 함수
 print('a -', a.index(3), a[3])
-# index(3) 이면 0 1 2 3 인 4번째 리스트에 해당하는 값을 갖고온다
+# index(3) 이면 3이 들어있는 위치를 의 순서를 출력한다.
 # 동일 작업으로는 a[3] 가 있다.
+
+print()
 # 5. insert : 지정위치에 값을 삽입하고싶을때 사용
 a.insert(2, 7)
 # 2번째 위치에 7이라는 값을 넣고싶다는 의미.
@@ -131,10 +140,14 @@ a.reverse()
 print('a - ',a)
 del a[6]
 print('a - ', a)
+
+print()
 # 6. remove() 제거함수
 a.remove(5)
 # remove() 안에 들어가는함수는 객체 값이 들어간다! 순서가아님! 즉 객체를 지정하여 삭제할수있다.
 print('a -', a)
+
+print()
 # 7. pop index 마지막에 해당하는 값을 가져 오고 그 가져온 값을 빼고 리스트를 재구성해준다.
 print('a -', a.pop())
 print('a -', a)
@@ -143,11 +156,13 @@ print('a -', a)
 print('a -', a.pop())
 print('a -', a)
 
+print()
 # 8. count() ()안에 해당하는 객체값이 몇개있는지 세어주는것 0이나올시 그값은 없는 값이다!
 # 두 개이상 값이 나올시 중복되있는 값이라는 의미이다.!
 print('a -', a.count(3))
 print('a -', a.count(10))
 
+print()
 # 9. extend : 연장하는것! 
 ex = [8, 9]
 a.extend(ex)
